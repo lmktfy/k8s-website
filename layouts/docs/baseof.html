@@ -26,7 +26,7 @@
             {{ partial "page-meta-links.html" . }}
             {{ partial "toc.html" . }}
           </aside>
-          <main id="maindoc" class="pl-md-5" role="main" {{ if ne .Params.cid "docsHome" }}data-pagefind-body{{ end }}{{ if (and .IsPage .Params.description ) }} data-pagefind-meta="description:{{ .Params.description }}"{{ end }}>
+          <main id="maindoc" class="ps-md-5" role="main" {{ if ne .Params.cid "docsHome" }}data-pagefind-body{{ end }}{{ if (and .IsPage .Params.description ) }} data-pagefind-meta="description:{{ .Params.description }}"{{ end }}>
             {{ if not .Site.Params.ui.breadcrumb_disable }}{{ partial "breadcrumb.html" . }}{{ end }}
             {{ block "deprecation_warning" . }}
               {{ partial "version-banner.html" . }}
