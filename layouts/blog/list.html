@@ -18,8 +18,8 @@ have blog posts -->
 		<h2>{{ T "post_posts_in" }} {{ .Key }}</h2>
 		<ul class="list-unstyled mt-4">
 			{{ range .Pages }}
-			<li class="media mb-4">
-				<div class="media-body">
+			<li class="d-flex mb-4">
+				<div class="flex-grow-1">
 					<h5 class="mt-0 mb-1"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h5>
 					<p class="mb-2 mb-md-3">
 						<small class="text-muted">
