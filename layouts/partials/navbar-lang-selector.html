@@ -18,7 +18,7 @@
   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     {{ .Language.LanguageName }}
   </a>
-  <ul class="dropdown-menu">
+  <ul class="dropdown-menu dropdown-menu-end">
     {{ range site.Languages }}
         {{- if ne .Lang $currentLang -}}
             {{- with index $translationMap .Lang -}}
