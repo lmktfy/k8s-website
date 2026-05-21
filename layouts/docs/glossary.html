@@ -3,7 +3,7 @@
 {{ end }}
 
 {{ define "main" }}
-<h1>{{ .Title }}</h1>
+<h1>{{ partial "docs/page-title.html" }}</h1>
 <p>{{ T "layouts_docs_glossary_description" }}</p>
 <div id="tag-container">
 	<p><em>{{ T "layouts_docs_glossary_filter" }}</em></p>

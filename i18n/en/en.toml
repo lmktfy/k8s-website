@@ -6,6 +6,9 @@
 [api_reference_title]
 other = "API reference"
 
+[api_reference_page_title]
+other = "{{ .title }} API reference"
+
 [auto_generated_edit_notice]
 other = "(auto-generated page)"
 

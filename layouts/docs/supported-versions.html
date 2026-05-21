@@ -1,6 +1,6 @@
 {{ define "main" }}
     <div class="td-content">
-    <h1>{{ .Title }}</h1>
+    <h1>{{ partial "docs/page-title.html" }}</h1>
     {{ .Content }}
     {{ $versions := .Page.Param "versions" }}
     {{ $thisPageRelUri := .Page.RelPermalink }}

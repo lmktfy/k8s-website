@@ -4,7 +4,7 @@
     {{ T "katacoda_message" | safeHTML }}
   </div>
   {{- end -}}
-  <h1 data-pagefind-weight="10">{{ .Title }}</h1>
+  <h1 data-pagefind-weight="10">{{ partial "docs/page-title.html" . }}</h1>
   {{ with .Params.description }}<div class="lead">{{ . | markdownify }}</div>{{ end }}
   <header class="article-meta">
     {{ partial "taxonomy_terms_article_wrapper.html" . }}
